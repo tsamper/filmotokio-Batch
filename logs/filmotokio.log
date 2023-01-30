@@ -1,0 +1,52 @@
+2023-01-19 19:48:10,008 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ProyectoFinalSpringBatchApplication using Java 11.0.10 on TrasWan with PID 15768 (C:\Users\PcCom1\eclipse-workspace\ProyectoFinalSpringBatch\target\classes started by TrasWan in C:\Users\PcCom1\eclipse-workspace\ProyectoFinalSpringBatch)
+2023-01-19 19:48:10,014 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-01-19 19:48:10,093 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-19 19:48:10,779 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-19 19:48:10,782 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-01-19 19:48:10,826 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tokioshool.filmotokio.repository.FilmRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-01-19 19:48:10,827 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 39 ms. Found 0 JDBC repository interfaces.
+2023-01-19 19:48:10,842 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-19 19:48:10,843 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-19 19:48:10,901 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2023-01-19 19:48:11,268 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-01-19 19:48:11,635 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-01-19 19:48:11,830 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-19 19:48:11,912 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-19 19:48:12,148 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-19 19:48:12,320 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-01-19 19:48:13,093 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-19 19:48:13,104 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-19 19:48:13,572 INFO com.tokioshool.filmotokio.configuration.JobBatchConfiguration [restartedMain] preparing writer
+2023-01-19 19:48:13,708 WARN org.springframework.boot.autoconfigure.batch.JpaBatchConfigurer [restartedMain] JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+2023-01-19 19:48:13,711 INFO org.springframework.batch.core.repository.support.JobRepositoryFactoryBean [restartedMain] No database type set, using meta data indicating: MYSQL
+2023-01-19 19:48:14,004 INFO org.springframework.batch.core.launch.support.SimpleJobLauncher [restartedMain] No TaskExecutor has been set, defaulting to synchronous executor.
+2023-01-19 19:48:14,214 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-01-19 19:48:14,238 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ProyectoFinalSpringBatchApplication in 4.767 seconds (JVM running for 5.836)
+2023-01-19 19:48:14,240 INFO org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner [restartedMain] Running default command line with: []
+2023-01-19 19:48:14,351 INFO org.springframework.batch.core.launch.support.SimpleJobLauncher$1 [restartedMain] Job: [FlowJob: [name=importFilmsJob]] launched with the following parameters: [{}]
+2023-01-19 19:48:14,580 INFO com.tokioshool.filmotokio.listener.JobCompletionNotificationListerner [restartedMain] Before JobCompletetionNotificationListener: Cantidad de películas por migrar: 11
+2023-01-19 19:48:14,591 INFO org.springframework.batch.core.job.SimpleStepHandler [restartedMain] Step already complete or not restartable, so no action to execute: StepExecution: id=1, version=3, name=step, status=COMPLETED, exitStatus=COMPLETED, readCount=3, filterCount=0, writeCount=3 readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=1, rollbackCount=0, exitDescription=
+2023-01-19 19:48:14,598 INFO com.tokioshool.filmotokio.listener.JobCompletionNotificationListerner [restartedMain] After JobCompletetionNotificationListener: Cantidad de películas por migrar: 11
+2023-01-19 19:48:14,606 INFO org.springframework.batch.core.launch.support.SimpleJobLauncher$1 [restartedMain] Job: [FlowJob: [name=importFilmsJob]] completed with the following parameters: [{}] and the following status: [COMPLETED] in 217ms
+2023-01-19 20:00:00,071 INFO org.springframework.batch.core.launch.support.SimpleJobLauncher$1 [scheduling-1] Job: [FlowJob: [name=importFilmsJob]] launched with the following parameters: [{time=1674154800012}]
+2023-01-19 20:00:00,081 INFO com.tokioshool.filmotokio.listener.JobCompletionNotificationListerner [scheduling-1] Before JobCompletetionNotificationListener: Cantidad de películas por migrar: 11
+2023-01-19 20:00:00,095 INFO org.springframework.batch.core.job.SimpleStepHandler [scheduling-1] Executing step: [step]
+2023-01-19 20:00:00,116 INFO com.tokioshool.filmotokio.reader.FilmItemReader [scheduling-1] Método before de FilmItemREader
+2023-01-19 20:00:00,144 INFO com.tokioshool.filmotokio.listener.FilmWriteListener [scheduling-1] Fecha de migración: 2023-01-19
+2023-01-19 20:00:00,144 INFO com.tokioshool.filmotokio.listener.FilmWriteListener [scheduling-1] Fecha de migración: 2023-01-19
+2023-01-19 20:00:00,144 INFO com.tokioshool.filmotokio.listener.FilmWriteListener [scheduling-1] Fecha de migración: 2023-01-19
+2023-01-19 20:00:00,145 INFO com.tokioshool.filmotokio.listener.FilmWriteListener [scheduling-1] Fecha de migración: 2023-01-19
+2023-01-19 20:00:00,155 INFO com.tokioshool.filmotokio.listener.FilmWriteListener [scheduling-1] Fecha de migración: 2023-01-19
+2023-01-19 20:00:00,155 INFO com.tokioshool.filmotokio.listener.FilmWriteListener [scheduling-1] Fecha de migración: 2023-01-19
+2023-01-19 20:00:00,155 INFO com.tokioshool.filmotokio.listener.FilmWriteListener [scheduling-1] Fecha de migración: 2023-01-19
+2023-01-19 20:00:00,156 INFO com.tokioshool.filmotokio.listener.FilmWriteListener [scheduling-1] Fecha de migración: 2023-01-19
+2023-01-19 20:00:00,156 INFO com.tokioshool.filmotokio.listener.FilmWriteListener [scheduling-1] Fecha de migración: 2023-01-19
+2023-01-19 20:00:00,156 INFO com.tokioshool.filmotokio.listener.FilmWriteListener [scheduling-1] Fecha de migración: 2023-01-19
+2023-01-19 20:00:00,156 INFO com.tokioshool.filmotokio.listener.FilmWriteListener [scheduling-1] Fecha de migración: 2023-01-19
+2023-01-19 20:00:00,161 INFO org.springframework.batch.core.step.AbstractStep [scheduling-1] Step: [step] executed in 65ms
+2023-01-19 20:00:00,168 INFO com.tokioshool.filmotokio.listener.JobCompletionNotificationListerner [scheduling-1] After JobCompletetionNotificationListener: Cantidad de películas por migrar: 0
+2023-01-19 20:00:00,172 INFO org.springframework.batch.core.launch.support.SimpleJobLauncher$1 [scheduling-1] Job: [FlowJob: [name=importFilmsJob]] completed with the following parameters: [{time=1674154800012}] and the following status: [COMPLETED] in 94ms
+2023-01-19 20:00:47,569 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(22)-127.0.0.1] Application shutdown requested.
+2023-01-19 20:00:47,574 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(22)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-19 20:00:47,578 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(22)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2023-01-19 20:00:47,589 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(22)-127.0.0.1] HikariPool-1 - Shutdown completed.
